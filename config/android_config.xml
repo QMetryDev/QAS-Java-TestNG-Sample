@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android Test" verbose="0">
+	<test name="Java Test" enabled="true">
+		<packages>
+			<package name="tests.android"></package>
+			<package name="tests.android.*"></package>
+		</packages>
+	</test>
+
+</suite>

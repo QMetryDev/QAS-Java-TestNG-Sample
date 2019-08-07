@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MobileWeb Test" verbose="0">
+	<test name="MobileWeb Test" enabled="true">
+		<packages>
+			<package name="tests.mobileweb"></package>
+			<package name="tests.mobileweb.*"></package>
+		</packages>
+	</test>
+
+</suite>

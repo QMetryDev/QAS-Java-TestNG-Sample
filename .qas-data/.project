@@ -1,0 +1,33 @@
+{
+    "additionalFields": {
+        "android": {
+            "appactivity": "com.qmetry.bank.bankingapplication.HomePageActivity",
+            "apppackage": "com.qmetry.bank.bankingapplication"
+        },
+        "mobileweb": {
+            "baseurl": "https://www.gmail.com"
+        },
+        "web": {
+            "baseurl": "https://www.gmail.com"
+        },
+        "webservice": {
+            "baseurl": "https://qas.qmetry.com/bank"
+        },
+        "windows": {
+            "appname": "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"
+        }
+    },
+    "framework": "testng",
+    "language": "java",
+    "projectSettings": {
+        "projectName": "JAVA_Testng",
+        "projectPath": "c:\\Users\\rinkesh.jain\\Desktop\\Sample"
+    },
+    "projectTypes": [
+        "web",
+        "mobileweb",
+        "webservice",
+        "windows",
+        "android"
+    ]
+}

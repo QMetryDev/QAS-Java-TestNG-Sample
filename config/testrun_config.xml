@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="QAF Demo" verbose="0">
+
+	<test name="Android Test" enabled="true">
+		<parameter name="env.resources" value="resources/testdata;resources/android"></parameter>
+		<packages>
+			<package name="tests.android"></package>
+			<package name="tests.android.*"></package>
+		</packages>
+	</test>
+	<test name="iOS Test" enabled="true">
+		<parameter name="env.resources" value="resources/testdata;resources/ios"></parameter>
+		<packages>
+			<package name="tests.ios"></package>
+			<package name="tests.ios.*"></package>
+		</packages>
+	</test>
+	<test name="Web Test" enabled="true">
+		<parameter name="env.resources" value="resources/testdata;resources/web"></parameter>
+		<packages>
+			<package name="tests.web"></package>
+			<package name="tests.web.*"></package>
+		</packages>
+	</test>
+	<test name="MobileWeb Test" enabled="true">
+		<parameter name="env.resources" value="resources/testdata;resources/mobileweb"></parameter>
+		<packages>
+			<package name="tests.mobileweb"></package>
+			<package name="tests.mobileweb.*"></package>
+		</packages>
+	</test>
+	<test name="WebService Test" enabled="true">
+		<parameter name="env.resources" value="resources/testdata;resources/webservice"></parameter>
+		<packages>
+			<package name="tests.webservice"></package>
+			<package name="tests.webservice.*"></package>
+		</packages>
+	</test>
+	<test name="Windows Test" enabled="true">
+		<parameter name="env.resources" value="resources/testdata;resources/windows"></parameter>
+		<packages>
+			<package name="tests.windows"></package>
+			<package name="tests.windows.*"></package>
+		</packages>
+	</test>
+
+</suite>

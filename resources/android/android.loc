@@ -1,0 +1,9 @@
+
+email={"locator":"accessibility id=email","desc":"email"}
+password={"locator":"accessibility id=password","desc":"password"}
+sign.in={"locator":"accessibility id=signIn","desc":"sign.in"}
+transacations={"locator":"accessibility id=transacations","desc":"transacations"}
+enter.amount={"locator":"accessibility id=enterAmount","desc":"enter.amount"}
+credit={"locator":"accessibility id=credit","desc":"credit"}
+.fund..transfer={"locator":"accessibility id=Fund Transfer","desc":".fund..transfer"}
+fund.transfer={"locator":"accessibility id=fund transfer","desc":"fund.transfer"}

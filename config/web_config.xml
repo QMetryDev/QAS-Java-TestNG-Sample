@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Test" verbose="0">
+	<test name="Web Test" enabled="true">
+		<packages>
+			<package name="tests.web"></package>
+			<package name="tests.web.*"></package>
+		</packages>
+	</test>
+
+</suite>

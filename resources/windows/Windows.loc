@@ -1,0 +1,5 @@
+
+..window..window.2...group..group.6...button.8.={"locator":"xpath=/Window/Window[2]/Group/Group[6]/Button[8]","desc":"..window..window.2...group..group.6...button.8."}
+..window..window.2...group..group.4...button.2.={"locator":"xpath=/Window/Window[2]/Group/Group[4]/Button[2]","desc":"..window..window.2...group..group.4...button.2."}
+..window..window.2...group..group.4...button.5.={"locator":"xpath=/Window/Window[2]/Group/Group[4]/Button[5]","desc":"..window..window.2...group..group.4...button.5."}
+xpath..Window.Window.2..Group.Text={"locator":"xpath=/Window/Window[2]/Group/Text","desc":""}

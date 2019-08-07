@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Windows Test" verbose="0">
+	<test name="Windows Test" enabled="true">
+		<packages>
+			<package name="tests.windows"></package>
+			<package name="tests.windows.*"></package>
+		</packages>
+	</test>
+
+
+</suite>

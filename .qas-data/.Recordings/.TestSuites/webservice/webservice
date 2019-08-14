@@ -1,0 +1,69 @@
+{
+    "steps": [
+        {
+            "command": "Request",
+            "element": "",
+            "eArray": [],
+            "input": "GET.struts2.rest.showcase.2.5.18.orders.json",
+            "status": "NotRun",
+            "elementKey": "GET.struts2.rest.showcase.2.5.18.orders.json",
+            "elementDesc": "",
+            "indexColumn": "",
+            "tcId": "39"
+        },
+        {
+            "command": "Request",
+            "element": "",
+            "input": "PUT.struts2.rest.showcase.2.5.18.orders.3.json",
+            "status": "NotRun",
+            "elementKey": "PUT.struts2.rest.showcase.2.5.18.orders.3.json",
+            "elementDesc": "",
+            "indexColumn": "",
+            "tcId": "39"
+        },
+        {
+            "command": "Response Should Have Status Code",
+            "element": "",
+            "eArray": [],
+            "input": "200",
+            "status": "NotRun",
+            "elementKey": "",
+            "elementDesc": "",
+            "indexColumn": ""
+        },
+        {
+            "command": "Response Should Have Header With Value",
+            "element": "content-length",
+            "eArray": [
+                [
+                    "content-length",
+                    "jsonpath"
+                ]
+            ],
+            "input": "4",
+            "status": "NotRun",
+            "elementKey": "",
+            "elementDesc": "",
+            "indexColumn": ""
+        },
+        {
+            "command": "Request",
+            "element": "",
+            "eArray": [],
+            "input": "PUT.struts2.rest.showcase.2.5.18.orders.3.json_1",
+            "status": "NotRun",
+            "elementKey": "PUT.struts2.rest.showcase.2.5.18.orders.3.json_1",
+            "elementDesc": "",
+            "indexColumn": "",
+            "tcId": "39"
+        }
+    ],
+    "type": "webservice",
+    "capabilities": {
+        "type": "webservice",
+        "apiUrl": "https://qas.qmetry.com",
+        "baseUrl": "https://qas.qmetry.com/bank"
+    },
+    "testDataExample": [],
+    "executionStatus": "NotRun"
+}

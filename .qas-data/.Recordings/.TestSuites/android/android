@@ -1,0 +1,450 @@
+{
+    "steps": [
+        {
+            "command": "Type",
+            "element": "email",
+            "eArray": [
+                [
+                    "accessibility id=email",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/email",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.EditText[@content-desc=\"email\"]",
+                    "xpath"
+                ],
+                [
+                    "email",
+                    "key"
+                ]
+            ],
+            "input": "Bob",
+            "status": "NotRun",
+            "elementKey": "email",
+            "elementDesc": "email",
+            "indexColumn": "",
+            "tcId": "11"
+        },
+        {
+            "command": "Verify Text",
+            "element": "email",
+            "eArray": [
+                [
+                    "accessibility id=email",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/email",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.EditText[@content-desc=\"email\"]",
+                    "xpath"
+                ],
+                [
+                    "email",
+                    "key"
+                ]
+            ],
+            "input": "Bob",
+            "status": "NotRun",
+            "elementKey": "email",
+            "elementDesc": "email",
+            "indexColumn": ""
+        },
+        {
+            "command": "Type",
+            "element": "password",
+            "eArray": [
+                [
+                    "accessibility id=password",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/password",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.EditText[@content-desc=\"password\"]",
+                    "xpath"
+                ],
+                [
+                    "password",
+                    "key"
+                ]
+            ],
+            "input": "Bob",
+            "status": "NotRun",
+            "elementKey": "password",
+            "elementDesc": "password",
+            "indexColumn": "",
+            "tcId": "11"
+        },
+        {
+            "command": "Verify Text",
+            "element": "password",
+            "eArray": [
+                [
+                    "accessibility id=password",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/password",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.EditText[@content-desc=\"password\"]",
+                    "xpath"
+                ],
+                [
+                    "password",
+                    "key"
+                ]
+            ],
+            "input": "Bob",
+            "status": "NotRun",
+            "elementKey": "",
+            "elementDesc": "",
+            "indexColumn": ""
+        },
+        {
+            "command": "Click",
+            "element": "sign.in",
+            "eArray": [
+                [
+                    "accessibility id=signIn",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/email_sign_in_button",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.Button[@content-desc=\"signIn\"]",
+                    "xpath"
+                ],
+                [
+                    "sign.in",
+                    "key"
+                ]
+            ],
+            "input": "",
+            "status": "NotRun",
+            "elementKey": "sign.in",
+            "elementDesc": "sign.in",
+            "indexColumn": "",
+            "tcId": "11"
+        },
+        {
+            "command": "Verify Present",
+            "element": "transacations",
+            "eArray": [
+                [
+                    "accessibility id=transacations",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/transactions",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.Button[@content-desc=\"transacations\"]",
+                    "xpath"
+                ],
+                [
+                    "transacations",
+                    "key"
+                ]
+            ],
+            "input": "",
+            "status": "NotRun",
+            "elementKey": "transacations",
+            "elementDesc": "transacations",
+            "indexColumn": "",
+            "tcId": "11"
+        },
+        {
+            "command": "Click",
+            "element": "transacations",
+            "eArray": [
+                [
+                    "accessibility id=transacations",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/transactions",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.Button[@content-desc=\"transacations\"]",
+                    "xpath"
+                ],
+                [
+                    "transacations",
+                    "key"
+                ]
+            ],
+            "input": "",
+            "status": "NotRun",
+            "elementKey": "transacations",
+            "elementDesc": "transacations",
+            "indexColumn": ""
+        },
+        {
+            "command": "Type",
+            "element": "enter.amount",
+            "eArray": [
+                [
+                    "accessibility id=enterAmount",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/amount",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.EditText[@content-desc=\"enterAmount\"]",
+                    "xpath"
+                ],
+                [
+                    "enter.amount",
+                    "key"
+                ]
+            ],
+            "input": "100",
+            "status": "NotRun",
+            "elementKey": "enter.amount",
+            "elementDesc": "enter.amount",
+            "indexColumn": "",
+            "tcId": "11"
+        },
+        {
+            "command": "Verify Present",
+            "element": "credit",
+            "eArray": [
+                [
+                    "accessibility id=credit",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/credit",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.Button[@content-desc=\"credit\"]",
+                    "xpath"
+                ],
+                [
+                    "credit",
+                    "key"
+                ]
+            ],
+            "input": "",
+            "status": "NotRun",
+            "elementKey": "credit",
+            "elementDesc": "credit",
+            "indexColumn": "",
+            "tcId": "11"
+        },
+        {
+            "command": "Click",
+            "element": "credit",
+            "eArray": [
+                [
+                    "accessibility id=credit",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/credit",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.Button[@content-desc=\"credit\"]",
+                    "xpath"
+                ],
+                [
+                    "credit",
+                    "key"
+                ]
+            ],
+            "input": "",
+            "status": "NotRun",
+            "elementKey": "credit",
+            "elementDesc": "credit",
+            "indexColumn": ""
+        },
+        {
+            "command": "Verify Present",
+            "element": ".fund..transfer",
+            "eArray": [
+                [
+                    "accessibility id=Fund Transfer",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/fundTransfer",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.Button[@content-desc=\"Fund Transfer\"]",
+                    "xpath"
+                ],
+                [
+                    ".fund..transfer",
+                    "key"
+                ]
+            ],
+            "input": "",
+            "status": "NotRun",
+            "elementKey": ".fund..transfer",
+            "elementDesc": ".fund..transfer",
+            "indexColumn": "",
+            "tcId": "11"
+        },
+        {
+            "command": "Click",
+            "element": ".fund..transfer",
+            "eArray": [
+                [
+                    "accessibility id=Fund Transfer",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/fundTransfer",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.Button[@content-desc=\"Fund Transfer\"]",
+                    "xpath"
+                ],
+                [
+                    ".fund..transfer",
+                    "key"
+                ]
+            ],
+            "input": "",
+            "status": "NotRun",
+            "elementKey": ".fund..transfer",
+            "elementDesc": ".fund..transfer",
+            "indexColumn": ""
+        },
+        {
+            "command": "Type",
+            "element": "enter.amount",
+            "eArray": [
+                [
+                    "accessibility id=enterAmount",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/transferAmount",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.EditText[@content-desc=\"enterAmount\"]",
+                    "xpath"
+                ],
+                [
+                    "enter.amount",
+                    "key"
+                ]
+            ],
+            "input": "100",
+            "status": "NotRun",
+            "elementKey": "enter.amount",
+            "elementDesc": "enter.amount",
+            "indexColumn": ""
+        },
+        {
+            "command": "Verify Text",
+            "element": "enter.amount",
+            "eArray": [
+                [
+                    "accessibility id=enterAmount",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/transferAmount",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.EditText[@content-desc=\"enterAmount\"]",
+                    "xpath"
+                ],
+                [
+                    "enter.amount",
+                    "key"
+                ]
+            ],
+            "input": "100",
+            "status": "NotRun",
+            "elementKey": "",
+            "elementDesc": "",
+            "indexColumn": ""
+        },
+        {
+            "command": "Click",
+            "element": "fund.transfer",
+            "eArray": [
+                [
+                    "accessibility id=fund transfer",
+                    "accessibility id"
+                ],
+                [
+                    "id=com.qmetry.bank.bankingapplication:id/btnSubmit",
+                    "id"
+                ],
+                [
+                    "xpath=//android.widget.Button[@content-desc=\"fund transfer\"]",
+                    "xpath"
+                ],
+                [
+                    "fund.transfer",
+                    "key"
+                ]
+            ],
+            "input": "",
+            "status": "NotRun",
+            "elementKey": "fund.transfer",
+            "elementDesc": "fund.transfer",
+            "indexColumn": "",
+            "tcId": "11"
+        }
+    ],
+    "type": "android",
+    "capabilities": {
+        "command": "start",
+        "capObj": {
+            "perfectoServer": {
+                "host": "",
+                "username": "",
+                "password": "",
+                "https": true
+            },
+            "desiredCapabilities": {
+                "platformName": "Android",
+                "platformVersion": "",
+                "appPackage": "com.qmetry.bank.bankingapplication",
+                "appActivity": "com.qmetry.bank.bankingapplication.HomePageActivity",
+                "deviceName": "emulator-5554",
+                "noReset": true,
+                "automationName": "UiAutomator2",
+                "browserName": "",
+                "fullReset": false,
+                "autoWebview": false,
+                "newCommandTimeout": "3000",
+                "idleTimeout": "3000"
+            },
+            "type": "automaticServer",
+            "host": "localhost",
+            "port": "4723",
+            "path": "/wd/hub"
+        },
+        "type": "android"
+    },
+    "testDataExample": [],
+    "executionStatus": "NotRun"
+}

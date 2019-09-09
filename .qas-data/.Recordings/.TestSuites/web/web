@@ -106,38 +106,6 @@
             "indexColumn": ""
         },
         {
-            "command": "Click",
-            "element": "div.div2111",
-            "eArray": [
-                [
-                    "xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/span/div[3]",
-                    "xpath:idRelative"
-                ],
-                [
-                    "xpath=//span/div[3]",
-                    "xpath:position"
-                ],
-                [
-                    "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Continue to Gmail'])[1]/following::div[18]",
-                    "xpath:neighbor"
-                ],
-                [
-                    "xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign in'])[1]/following::div[19]",
-                    "xpath:neighbor"
-                ],
-                [
-                    "div.div2111",
-                    "key"
-                ]
-            ],
-            "input": "",
-            "status": "NotRun",
-            "elementKey": "div.div2111",
-            "elementDesc": "Text DIV2111",
-            "indexColumn": "",
-            "tcId": "26"
-        },
-        {
             "command": "Verify Value",
             "element": "email.identifierid",
             "eArray": [
@@ -468,5 +436,6 @@
     },
     "testData": "resources/testdata/testng.csv",
     "testDataExample": [],
+    "isTCValid": true,
     "executionStatus": "NotRun"
 }

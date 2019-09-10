@@ -126,7 +126,7 @@
 					<url>https://testmanagement.qmetry.com/</url>
 					<!-- do not modify below properties-->
 					<format>testng/xml</format>
-					<filepath>${test.results.dir}/${run.time}</filepath>
+					<filepath>${test.results.dir}/${run.time}/testng-results.xml</filepath>
 					<!-- modify below properties as per your account-->
 					<apikey>PLACE_YOUR_API_KEY_HERE</apikey>
 					<qtmProject>PROJECT_NAME</qtmProject>

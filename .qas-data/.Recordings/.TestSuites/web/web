@@ -436,6 +436,5 @@
     },
     "testData": "resources/testdata/testng.csv",
     "testDataExample": [],
-    "isTCValid": true,
     "executionStatus": "NotRun"
 }

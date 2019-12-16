@@ -5,3 +5,15 @@ span.span1111={"locator":"xpath=//div[@id='identifierNext']/span/span","desc":"T
 password.test={"locator":"name=password","desc":"test password"}
 div.div111={"locator":"xpath=//div[@id='view_container']/div/div/div[2]/div","desc":"Text DIV111"}
 span.span1111_1={"locator":"xpath=//div[@id='passwordNext']/span/span","desc":"Text SPAN1111"}
+number.enteramountforcredit={"locator":"xpath=//div[2]/input","desc":"Enter amount for credit number"}
+button.button11={"locator":"xpath=//div[2]/span/button","desc":"BUTTON BUTTON11"}
+strong.usergloberank={"locator":"id=user-globe-rank","desc":"STRONG user-globe-rank"}
+text.txtusername={"locator":"id=txtUsername","desc":"Input for txtUsername"}
+password.txtpassword={"locator":"id=txtPassword","desc":"txtPassword password"}
+button.btnlogin={"locator":"id=btnLogin","desc":"BUTTON btnLogin"}
+button.button={"locator":"xpath=//button","desc":"BUTTON BUTTON"}
+strong.usergloberank={"locator":"id=user-globe-rank","desc":"STRONG user-globe-rank"}
+number.enteramountforcredit={"locator":"xpath=.//*[@placeholder='Enter amount for credit']","desc":"Enter amount for credit number"}
+div.div={"locator":"xpath=//div/div","desc":"Text DIV"}
+span.span1={"locator":"xpath=//span/span","desc":"Text SPAN1"}
+button.button1={"locator":"xpath=//span/button","desc":"BUTTON BUTTON1"}

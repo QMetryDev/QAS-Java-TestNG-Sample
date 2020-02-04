@@ -21,7 +21,7 @@
 		<lib.dir>${project.basedir}/lib</lib.dir>
 		<resource.dir>${project.basedir}/resources</resource.dir>
 		<output.dir>${test.results.dir}/${run.time}</output.dir>
-		<maven.build.timestamp.format>dd_MMM_yyyy_hh_mm_aa</maven.build.timestamp.format>
+		<maven.build.timestamp.format>dd_MMM_yyyy_hh_mm_ss_aa</maven.build.timestamp.format>
 		<testng.report.title>QAF Demo</testng.report.title>
 	</properties>
 	<repositories>

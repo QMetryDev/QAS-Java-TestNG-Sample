@@ -528,6 +528,9 @@
         "type": "android"
     },
     "testDataExample": [],
+    "isTCValid": true,
+    "externalTestData": false,
+    "dbDetails": {},
     "recordSessionType": "multiple",
     "tags": [],
     "shared": false,

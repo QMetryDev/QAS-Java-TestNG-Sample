@@ -14,7 +14,7 @@
                 ]
             ],
             "input": "",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "..window..window.2...group..group.5...button.2.",
             "elementDesc": "..window..window.2...group..group.5...button.2.",
             "indexColumn": "",
@@ -39,7 +39,7 @@
                 ]
             ],
             "input": "",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "..window..window.2...group..group.4...button.4.",
             "elementDesc": "..window..window.2...group..group.4...button.4.",
             "indexColumn": "",
@@ -64,7 +64,7 @@
                 ]
             ],
             "input": "",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "..window..window.2...group..group.5...button.9.",
             "elementDesc": "..window..window.2...group..group.5...button.9.",
             "indexColumn": "",
@@ -89,7 +89,7 @@
                 ]
             ],
             "input": "",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "..window..window.2...group..group.4...button.5.",
             "elementDesc": "..window..window.2...group..group.4...button.5.",
             "indexColumn": "",
@@ -114,7 +114,7 @@
                 ]
             ],
             "input": "Display is 9",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "",
             "elementDesc": "",
             "indexColumn": "",

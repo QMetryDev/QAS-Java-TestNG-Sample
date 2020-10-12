@@ -4,7 +4,15 @@ import static com.qmetry.qaf.automation.ui.webdriver.ElementFactory.$;
 
 import com.qmetry.qaf.automation.core.ConfigurationManager;
 import com.qmetry.qaf.automation.step.QAFTestStep;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 // define common steps among all the platforms.
 // You can create sub packages to organize the steps within different modules
 public class StepsLibrary {
@@ -39,4 +47,24 @@ public class StepsLibrary {
 	public static void switchToPlatform(String platform) {
 		ConfigurationManager.getBundle().setProperty("env.resources", "resources/testdata;resources/" + platform);
 	}
+
+	@QAFTestStep(description="select {0} in {1}")
+	public static void selectIn(String value,String loc) {
+		WebElement sel = new WebDriverTestBase().getDriver().findElement(loc);
+		Select selectDropDown = new Select(sel);
+		selectDropDown.selectByValue(value.split("=")[1]);
+	}
+	@QAFTestStep(description = "close {loc}")
+	public static void close(String loc) {
+		new WebDriverTestBase().getDriver().close();
+	}
+
+	@QAFTestStep(description = "switchWindow {0}")
+	public static void switchWindow(String str0) {
+		Set<String> windowHandles = new WebDriverTestBase().getDriver().getWindowHandles();
+		List<String> windowStrings = new ArrayList<>(windowHandles);
+		String reqWindow = windowStrings.get(Integer.parseInt(str0));
+		new WebDriverTestBase().getDriver().switchTo().window(reqWindow);
+	}
+
 }

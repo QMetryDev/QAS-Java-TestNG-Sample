@@ -8,7 +8,15 @@
             "status": "NotRun",
             "elementKey": "",
             "elementDesc": "",
-            "indexColumn": ""
+            "indexColumn": "",
+            "arg": "{\"__index\":1,\"credit\":\"1000\",\"debit\":\"1000\"}",
+            "tcId": 5,
+            "tsId": 4,
+            "testData": true,
+            "tdId": 1,
+            "duration": 4381000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Clear",
@@ -52,7 +60,14 @@
             "elementKey": "text.txtusername",
             "elementDesc": "Input for txtUsername",
             "indexColumn": "",
-            "tcId": "43"
+            "tcId": 5,
+            "arg": "{\"__index\":1,\"credit\":\"1000\",\"debit\":\"1000\"}",
+            "tsId": 4,
+            "testData": true,
+            "tdId": 1,
+            "duration": 589000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Type",
@@ -95,7 +110,15 @@
             "status": "NotRun",
             "elementKey": "text.txtusername",
             "elementDesc": "Input for txtUsername",
-            "indexColumn": ""
+            "indexColumn": "",
+            "arg": "{\"__index\":1,\"credit\":\"1000\",\"debit\":\"1000\"}",
+            "tcId": 5,
+            "tsId": 4,
+            "testData": true,
+            "tdId": 1,
+            "duration": 569000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Clear",
@@ -135,7 +158,14 @@
             "elementKey": "password.txtpassword",
             "elementDesc": "txtPassword password",
             "indexColumn": "",
-            "tcId": "43"
+            "tcId": 5,
+            "arg": "{\"__index\":1,\"credit\":\"1000\",\"debit\":\"1000\"}",
+            "tsId": 4,
+            "testData": true,
+            "tdId": 1,
+            "duration": 556000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Type",
@@ -174,7 +204,15 @@
             "status": "NotRun",
             "elementKey": "password.txtpassword",
             "elementDesc": "txtPassword password",
-            "indexColumn": ""
+            "indexColumn": "",
+            "arg": "{\"__index\":1,\"credit\":\"1000\",\"debit\":\"1000\"}",
+            "tcId": 5,
+            "tsId": 4,
+            "testData": true,
+            "tdId": 1,
+            "duration": 562000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Click",
@@ -210,7 +248,14 @@
             "elementKey": "button.btnlogin",
             "elementDesc": "BUTTON btnLogin",
             "indexColumn": "",
-            "tcId": "43"
+            "tcId": 5,
+            "arg": "{\"__index\":1,\"credit\":\"1000\",\"debit\":\"1000\"}",
+            "tsId": 4,
+            "testData": true,
+            "tdId": 1,
+            "duration": 627000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Clear",
@@ -246,7 +291,14 @@
             "elementKey": "number.enteramountforcredit",
             "elementDesc": "Enter amount for credit number",
             "indexColumn": "",
-            "tcId": "43"
+            "tcId": 5,
+            "arg": "{\"__index\":1,\"credit\":\"1000\",\"debit\":\"1000\"}",
+            "tsId": 4,
+            "testData": true,
+            "tdId": 1,
+            "duration": 559000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Type",
@@ -281,7 +333,15 @@
             "status": "NotRun",
             "elementKey": "number.enteramountforcredit",
             "elementDesc": "Enter amount for credit number",
-            "indexColumn": ""
+            "indexColumn": "",
+            "arg": "{\"__index\":1,\"credit\":\"1000\",\"debit\":\"1000\"}",
+            "tcId": 5,
+            "tsId": 4,
+            "testData": true,
+            "tdId": 1,
+            "duration": 561000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Click",
@@ -309,7 +369,14 @@
             "elementKey": "button.button11",
             "elementDesc": "BUTTON BUTTON11",
             "indexColumn": "",
-            "tcId": "43"
+            "tcId": 5,
+            "arg": "{\"__index\":1,\"credit\":\"1000\",\"debit\":\"1000\"}",
+            "tsId": 4,
+            "testData": true,
+            "tdId": 1,
+            "duration": 611000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Verify Present",
@@ -337,7 +404,14 @@
             "elementKey": "button.button",
             "elementDesc": "BUTTON BUTTON",
             "indexColumn": "",
-            "tcId": "43"
+            "tcId": 5,
+            "arg": "{\"__index\":1,\"credit\":\"1000\",\"debit\":\"1000\"}",
+            "tsId": 4,
+            "testData": true,
+            "tdId": 1,
+            "duration": 525000000,
+            "errMessage": "",
+            "isRowExpanded": false
         }
     ],
     "type": "mobileweb",
@@ -359,6 +433,8 @@
     },
     "testData": "resources/mobileweb/TransactionData.csv",
     "testDataExample": [],
-    "isTCValid": true,
+    "recordSessionType": "multiple",
+    "tags": [],
+    "shared": false,
     "executionStatus": "NotRun"
 }

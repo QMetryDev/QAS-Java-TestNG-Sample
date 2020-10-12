@@ -2,73 +2,76 @@
     "steps": [
         {
             "command": "Click",
-            "element": "..window..window.2...group..group.6...button.8.",
+            "element": "..window..window.2...group..group.5...button.2.",
             "eArray": [
                 [
-                    "xpath=/Window/Window[2]/Group/Group[6]/Button[8]",
+                    "xpath=/Window/Window[2]/Group/Group[5]/Button[2]",
                     "xpath"
                 ],
                 [
-                    "..window..window.2...group..group.6...button.8.",
+                    "..window..window.2...group..group.5...button.2.",
                     "key"
                 ]
             ],
             "input": "",
             "status": "Passed",
-            "elementKey": "..window..window.2...group..group.6...button.8.",
-            "elementDesc": "..window..window.2...group..group.6...button.8.",
+            "elementKey": "..window..window.2...group..group.5...button.2.",
+            "elementDesc": "..window..window.2...group..group.5...button.2.",
             "indexColumn": "",
-            "tcId": "41",
-            "tsId": 2,
-            "duration": 1259000000,
+            "tcId": 11,
+            "tsId": 10,
+            "testData": false,
+            "duration": 1437000000,
             "errMessage": "",
             "isRowExpanded": false
         },
         {
             "command": "Click",
-            "element": "..window..window.2...group..group.4...button.2.",
+            "element": "..window..window.2...group..group.4...button.4.",
             "eArray": [
                 [
-                    "xpath=/Window/Window[2]/Group/Group[4]/Button[2]",
+                    "xpath=/Window/Window[2]/Group/Group[4]/Button[4]",
                     "xpath"
                 ],
                 [
-                    "..window..window.2...group..group.4...button.2.",
+                    "..window..window.2...group..group.4...button.4.",
                     "key"
                 ]
             ],
             "input": "",
             "status": "Passed",
-            "elementKey": "..window..window.2...group..group.4...button.2.",
-            "elementDesc": "..window..window.2...group..group.4...button.2.",
+            "elementKey": "..window..window.2...group..group.4...button.4.",
+            "elementDesc": "..window..window.2...group..group.4...button.4.",
             "indexColumn": "",
-            "tcId": "41",
-            "tsId": 2,
-            "duration": 1043000000,
+            "tcId": 11,
+            "tsId": 10,
+            "testData": false,
+            "duration": 1266000000,
             "errMessage": "",
             "isRowExpanded": false
         },
         {
             "command": "Click",
-            "element": "..window..window.2...group..group.6...button.8.",
+            "element": "..window..window.2...group..group.5...button.9.",
             "eArray": [
                 [
-                    "xpath=/Window/Window[2]/Group/Group[6]/Button[8]",
+                    "xpath=/Window/Window[2]/Group/Group[5]/Button[9]",
                     "xpath"
                 ],
                 [
-                    "..window..window.2...group..group.6...button.8.",
+                    "..window..window.2...group..group.5...button.9.",
                     "key"
                 ]
             ],
             "input": "",
             "status": "Passed",
-            "elementKey": "..window..window.2...group..group.6...button.8.",
-            "elementDesc": "..window..window.2...group..group.6...button.8.",
+            "elementKey": "..window..window.2...group..group.5...button.9.",
+            "elementDesc": "..window..window.2...group..group.5...button.9.",
             "indexColumn": "",
-            "tcId": "41",
-            "tsId": 2,
-            "duration": 1023000000,
+            "tcId": 11,
+            "tsId": 10,
+            "testData": false,
+            "duration": 1178000000,
             "errMessage": "",
             "isRowExpanded": false
         },
@@ -90,39 +93,42 @@
             "elementKey": "..window..window.2...group..group.4...button.5.",
             "elementDesc": "..window..window.2...group..group.4...button.5.",
             "indexColumn": "",
-            "tcId": "41",
-            "tsId": 2,
-            "duration": 1045000000,
+            "tcId": 11,
+            "tsId": 10,
+            "testData": false,
+            "duration": 1220000000,
             "errMessage": "",
             "isRowExpanded": false
         },
         {
             "command": "Verify Text",
-            "element": "xpath..Window.Window.2..Group.Text",
+            "element": "xpath..Window.Window.2..Group.Text.2.",
             "eArray": [
                 [
-                    "xpath=/Window/Window[2]/Group/Text",
+                    "xpath=/Window/Window[2]/Group/Text[2]",
                     "xpath"
                 ],
                 [
-                    "xpath..Window.Window.2..Group.Text",
+                    "xpath..Window.Window.2..Group.Text.2.",
                     "key"
                 ]
             ],
-            "input": "Display is 49",
+            "input": "Display is 9",
             "status": "Passed",
             "elementKey": "",
             "elementDesc": "",
             "indexColumn": "",
-            "tcId": "41",
-            "tsId": 2,
-            "duration": 861000000,
+            "tcId": 11,
+            "tsId": 10,
+            "testData": false,
+            "duration": 1109000000,
             "errMessage": "",
             "isRowExpanded": false
         }
     ],
     "type": "windows",
     "capabilities": {
+        "command": "start",
         "capObj": {
             "perfectoServer": {
                 "host": "",
@@ -142,8 +148,14 @@
             "path": "/wd/hub"
         },
         "type": "windows",
-        "mode": "play"
+        "isMobileWebOnDevice": false
     },
     "testDataExample": [],
+    "isTCValid": true,
+    "externalTestData": false,
+    "dbDetails": {},
+    "recordSessionType": "multiple",
+    "tags": [],
+    "shared": false,
     "executionStatus": "Passed"
 }

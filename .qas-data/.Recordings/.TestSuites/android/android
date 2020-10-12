@@ -22,7 +22,7 @@
                 ]
             ],
             "input": "Bob",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "email",
             "elementDesc": "email",
             "indexColumn": "",
@@ -55,7 +55,7 @@
                 ]
             ],
             "input": "Bob",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "email",
             "elementDesc": "email",
             "indexColumn": "",
@@ -88,7 +88,7 @@
                 ]
             ],
             "input": "Bob",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "password",
             "elementDesc": "password",
             "indexColumn": "",
@@ -121,7 +121,7 @@
                 ]
             ],
             "input": "Bob",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "",
             "elementDesc": "",
             "indexColumn": "",
@@ -154,7 +154,7 @@
                 ]
             ],
             "input": "",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "sign.in",
             "elementDesc": "sign.in",
             "indexColumn": "",
@@ -187,7 +187,7 @@
                 ]
             ],
             "input": "",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "transacations",
             "elementDesc": "transacations",
             "indexColumn": "",
@@ -220,7 +220,7 @@
                 ]
             ],
             "input": "",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "transacations",
             "elementDesc": "transacations",
             "indexColumn": "",
@@ -253,7 +253,7 @@
                 ]
             ],
             "input": "100",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "enter.amount",
             "elementDesc": "enter.amount",
             "indexColumn": "",
@@ -286,7 +286,7 @@
                 ]
             ],
             "input": "",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "credit",
             "elementDesc": "credit",
             "indexColumn": "",
@@ -319,7 +319,7 @@
                 ]
             ],
             "input": "",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "credit",
             "elementDesc": "credit",
             "indexColumn": "",
@@ -352,7 +352,7 @@
                 ]
             ],
             "input": "",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": ".fund..transfer",
             "elementDesc": ".fund..transfer",
             "indexColumn": "",
@@ -385,7 +385,7 @@
                 ]
             ],
             "input": "",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": ".fund..transfer",
             "elementDesc": ".fund..transfer",
             "indexColumn": "",
@@ -418,7 +418,7 @@
                 ]
             ],
             "input": "100",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "enter.amount",
             "elementDesc": "enter.amount",
             "indexColumn": "",
@@ -451,7 +451,7 @@
                 ]
             ],
             "input": "100",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "",
             "elementDesc": "",
             "indexColumn": "",
@@ -484,7 +484,7 @@
                 ]
             ],
             "input": "",
-            "status": "Passed",
+            "status": "NotRun",
             "elementKey": "fund.transfer",
             "elementDesc": "fund.transfer",
             "indexColumn": "",

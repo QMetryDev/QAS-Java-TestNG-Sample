@@ -26,7 +26,12 @@
             "elementKey": "email",
             "elementDesc": "email",
             "indexColumn": "",
-            "tcId": "11"
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 2564000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Verify Text",
@@ -53,7 +58,13 @@
             "status": "NotRun",
             "elementKey": "email",
             "elementDesc": "email",
-            "indexColumn": ""
+            "indexColumn": "",
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 604000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Type",
@@ -81,7 +92,12 @@
             "elementKey": "password",
             "elementDesc": "password",
             "indexColumn": "",
-            "tcId": "11"
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 1114000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Verify Text",
@@ -108,7 +124,13 @@
             "status": "NotRun",
             "elementKey": "",
             "elementDesc": "",
-            "indexColumn": ""
+            "indexColumn": "",
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 600000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Click",
@@ -136,7 +158,12 @@
             "elementKey": "sign.in",
             "elementDesc": "sign.in",
             "indexColumn": "",
-            "tcId": "11"
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 601000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Verify Present",
@@ -164,7 +191,12 @@
             "elementKey": "transacations",
             "elementDesc": "transacations",
             "indexColumn": "",
-            "tcId": "11"
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 1980000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Click",
@@ -191,7 +223,13 @@
             "status": "NotRun",
             "elementKey": "transacations",
             "elementDesc": "transacations",
-            "indexColumn": ""
+            "indexColumn": "",
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 587000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Type",
@@ -219,7 +257,12 @@
             "elementKey": "enter.amount",
             "elementDesc": "enter.amount",
             "indexColumn": "",
-            "tcId": "11"
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 1382000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Verify Present",
@@ -247,7 +290,12 @@
             "elementKey": "credit",
             "elementDesc": "credit",
             "indexColumn": "",
-            "tcId": "11"
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 563000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Click",
@@ -274,7 +322,13 @@
             "status": "NotRun",
             "elementKey": "credit",
             "elementDesc": "credit",
-            "indexColumn": ""
+            "indexColumn": "",
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 590000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Verify Present",
@@ -302,7 +356,12 @@
             "elementKey": ".fund..transfer",
             "elementDesc": ".fund..transfer",
             "indexColumn": "",
-            "tcId": "11"
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 1964000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Click",
@@ -329,7 +388,13 @@
             "status": "NotRun",
             "elementKey": ".fund..transfer",
             "elementDesc": ".fund..transfer",
-            "indexColumn": ""
+            "indexColumn": "",
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 582000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Type",
@@ -356,7 +421,13 @@
             "status": "NotRun",
             "elementKey": "enter.amount",
             "elementDesc": "enter.amount",
-            "indexColumn": ""
+            "indexColumn": "",
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 893000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Verify Text",
@@ -383,7 +454,13 @@
             "status": "NotRun",
             "elementKey": "",
             "elementDesc": "",
-            "indexColumn": ""
+            "indexColumn": "",
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 573000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Click",
@@ -411,7 +488,12 @@
             "elementKey": "fund.transfer",
             "elementDesc": "fund.transfer",
             "indexColumn": "",
-            "tcId": "11"
+            "tcId": 3,
+            "tsId": 2,
+            "testData": false,
+            "duration": 603000000,
+            "errMessage": "",
+            "isRowExpanded": false
         }
     ],
     "type": "android",
@@ -446,5 +528,11 @@
         "type": "android"
     },
     "testDataExample": [],
+    "isTCValid": true,
+    "externalTestData": false,
+    "dbDetails": {},
+    "recordSessionType": "multiple",
+    "tags": [],
+    "shared": false,
     "executionStatus": "NotRun"
 }

@@ -20,8 +20,8 @@
     "framework": "testng",
     "language": "java",
     "projectSettings": {
-        "projectName": "JAVA_Testng",
-        "projectPath": "c:\\Users\\rinkesh.jain\\Desktop\\Sample"
+        "projectName": "QAS-Java-TestNG-Sample",
+        "projectPath": "d:/NewQAS/Samples/SampleProjectFixes"
     },
     "projectTypes": [
         "web",
@@ -29,5 +29,7 @@
         "webservice",
         "windows",
         "android"
-    ]
+    ],
+    "key": "VoGMdS6ysgGrTY2R7Dk/AH6ZeZRgb7Nt14rmdRizlcHjH3QbWFEBA07/GRF3ywdOcf9IcNagfGJUurj3BAfP9kGSHrCN8O+Fo/cr6YI5ZO8=",
+    "shareable": "sharedFunction"
 }

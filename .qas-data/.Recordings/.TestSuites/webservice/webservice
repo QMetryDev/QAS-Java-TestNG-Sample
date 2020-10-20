@@ -9,7 +9,12 @@
             "elementKey": "GET.struts2.rest.showcase.2.5.18.orders.json",
             "elementDesc": "",
             "indexColumn": "",
-            "tcId": "39"
+            "tcId": 9,
+            "tsId": 8,
+            "testData": false,
+            "duration": 1109000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Request",
@@ -19,7 +24,12 @@
             "elementKey": "PUT.struts2.rest.showcase.2.5.18.orders.3.json",
             "elementDesc": "",
             "indexColumn": "",
-            "tcId": "39"
+            "tcId": 9,
+            "tsId": 8,
+            "testData": false,
+            "duration": 826000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Response Should Have Status Code",
@@ -29,7 +39,13 @@
             "status": "NotRun",
             "elementKey": "",
             "elementDesc": "",
-            "indexColumn": ""
+            "indexColumn": "",
+            "tcId": 9,
+            "tsId": 8,
+            "testData": false,
+            "duration": 502000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Response Should Have Header With Value",
@@ -44,7 +60,13 @@
             "status": "NotRun",
             "elementKey": "",
             "elementDesc": "",
-            "indexColumn": ""
+            "indexColumn": "",
+            "tcId": 9,
+            "tsId": 8,
+            "testData": false,
+            "duration": 508000000,
+            "errMessage": "",
+            "isRowExpanded": false
         },
         {
             "command": "Request",
@@ -55,7 +77,12 @@
             "elementKey": "PUT.struts2.rest.showcase.2.5.18.orders.3.json_1",
             "elementDesc": "",
             "indexColumn": "",
-            "tcId": "39"
+            "tcId": 9,
+            "tsId": 8,
+            "testData": false,
+            "duration": 1027000000,
+            "errMessage": "",
+            "isRowExpanded": false
         }
     ],
     "type": "webservice",
@@ -65,5 +92,8 @@
         "baseUrl": "https://qas.qmetry.com/bank"
     },
     "testDataExample": [],
+    "recordSessionType": "multiple",
+    "tags": [],
+    "shared": false,
     "executionStatus": "NotRun"
 }

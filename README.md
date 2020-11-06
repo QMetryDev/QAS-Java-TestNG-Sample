@@ -11,7 +11,7 @@
 
 4.MAVEN installed in system.
 
-
+5.Compatible chromedriver path should be set in your system and in application.properties file if it is present in your project folder for command line execution.
 #### About
 * This is sample project with Maven directory structure:
 * The 'config' directory contains testng.xml file, and is a place holder for configuration files.
@@ -34,6 +34,10 @@
 	```
 	 mvn clean
 	 mvn test
+	 ```
+* To run project using Tags :
+	```
+	 mvn test -Dgroups=tag1,tag2
 	 ```
 
 #### View Results.

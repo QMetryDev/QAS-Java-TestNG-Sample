@@ -1,9 +1,11 @@
-package steps.web;
+package steps.ios;
 
 import static com.qmetry.qaf.automation.step.CommonStep.click;
 import static com.qmetry.qaf.automation.step.CommonStep.sendKeys;
 
 import com.qmetry.qaf.automation.step.QAFTestStep;
+//define ios related steps here.
+//You can create sub packages to organize the steps within different modules
 
 public class StepsLibrary {
 	/**

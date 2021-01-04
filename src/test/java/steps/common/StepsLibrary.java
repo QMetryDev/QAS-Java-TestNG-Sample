@@ -13,6 +13,9 @@ import com.qmetry.qaf.automation.ui.WebDriverTestBase;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import org.openqa.selenium.interactions.Actions;
+import com.qmetry.qaf.automation.util.Validator;
+import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 // define common steps among all the platforms.
 // You can create sub packages to organize the steps within different modules
 public class StepsLibrary {
@@ -52,7 +55,7 @@ public class StepsLibrary {
 	public static void selectIn(String value,String loc) {
 		WebElement sel = new WebDriverTestBase().getDriver().findElement(loc);
 		Select selectDropDown = new Select(sel);
-		selectDropDown.selectByValue(value.split("=")[1]);
+		selectDropDown.selectByValue(value.contains("=")?value.split("=")[1]:value);
 	}
 	@QAFTestStep(description = "close {loc}")
 	public static void close(String loc) {
@@ -66,5 +69,46 @@ public class StepsLibrary {
 		String reqWindow = windowStrings.get(Integer.parseInt(str0));
 		new WebDriverTestBase().getDriver().switchTo().window(reqWindow);
 	}
+	@QAFTestStep(description = "implicitWait {0}")
+	public static void implicitWait(String str0) {
+		try {
+			Thread.sleep(Long.valueOf(str0));
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+	@QAFTestStep(description="mouseHover {0}")
+	public static void mouseHover(String loc) {
+		WebElement web_Element_To_Be_Hovered = new WebDriverTestBase().getDriver().findElement(loc);
+		Actions builder = new Actions(new WebDriverTestBase().getDriver());
+		builder.moveToElement(web_Element_To_Be_Hovered).build().perform();
+	}
 
+	@QAFTestStep(description = "verifyTitle {0}")
+	public static void verifyTitle(String input) {
+		Validator.verifyTrue(new WebDriverTestBase().getDriver().getTitle().equalsIgnoreCase(input),"Actual Title: \""+ new WebDriverTestBase().getDriver().getTitle() +"\" does not match with Expected: \"" +input+"\"" , "Actual Title: \""+ new WebDriverTestBase().getDriver().getTitle()+"\" matches with Expected: \"" +input+"\"");
+	}
+
+	@QAFTestStep(description = "assertTitle {0}")
+	public static void assertTitle(String input) {
+		Validator.assertTrue(new WebDriverTestBase().getDriver().getTitle().equalsIgnoreCase(input),"Actual Title: \""+ new WebDriverTestBase().getDriver().getTitle() +"\" does not match with Expected: \"" +input+"\"" , "Actual Title: \""+ new WebDriverTestBase().getDriver().getTitle()+"\" matches with Expected: \"" +input+"\"");
+	}
+
+	@QAFTestStep(description="drag {source} and drop on {target} perform")
+	public static void dragAndDropPerform(String source, String target) {
+		QAFExtendedWebElement src = (QAFExtendedWebElement) $(source);
+		Actions actions = new Actions(src.getWrappedDriver());
+		actions.dragAndDrop(src, $(target)).perform();
+	}
+	@QAFTestStep(description="drag {source} and drop on {Xtarget} {Ytarget} perform")
+	public static void dragAndDropPerform(String source, Integer Xtarget,Integer Ytarget) {
+		QAFExtendedWebElement src = (QAFExtendedWebElement) $(source);
+		Actions actions = new Actions(src.getWrappedDriver());
+		actions.dragAndDropBy(src, Xtarget, Ytarget).build().perform();
+	}
+	
+	@QAFTestStep(description = "maximizeWindow")
+	public static void maximizeWindow() {
+		new WebDriverTestBase().getDriver().manage().window().maximize();
+	}
 }

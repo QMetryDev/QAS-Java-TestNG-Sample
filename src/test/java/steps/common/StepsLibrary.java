@@ -16,9 +16,55 @@ import java.util.Set;
 import org.openqa.selenium.interactions.Actions;
 import com.qmetry.qaf.automation.util.Validator;
 import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
+import org.openqa.selenium.JavascriptExecutor;
 // define common steps among all the platforms.
 // You can create sub packages to organize the steps within different modules
 public class StepsLibrary {
+	private static String getJsDndHelper() {
+		return "function simulateDragDrop(sourceNode, destinationNode) {\r\n" +
+				"		    var EVENT_TYPES = {\r\n" +
+				"		        DRAG_END: 'dragend',\r\n" +
+				"		        DRAG_START: 'dragstart',\r\n" +
+				"		        DROP: 'drop'\r\n" +
+				"		    }\r\n" +
+				"		\r\n" +
+				"		    function createCustomEvent(type) {\r\n" +
+				"		        var event = new CustomEvent(\"CustomEvent\")\r\n" +
+				"		        event.initCustomEvent(type, true, true, null)\r\n" +
+				"		        event.dataTransfer = {\r\n" +
+				"		            data: {\r\n" +
+				"		            },\r\n" +
+				"		            setData: function(type, val) {\r\n" +
+				"		                this.data[type] = val\r\n" +
+				"		            },\r\n" +
+				"		            getData: function(type) {\r\n" +
+				"		                return this.data[type]\r\n" +
+				"		            }\r\n" +
+				"		        }\r\n" +
+				"		        return event\r\n" +
+				"		    }\r\n" +
+				"		\r\n" +
+				"		    function dispatchEvent(node, type, event) {\r\n" +
+				"		        if (node.dispatchEvent) {\r\n" +
+				"		            return node.dispatchEvent(event)\r\n" +
+				"		        }\r\n" +
+				"		        if (node.fireEvent) {\r\n" +
+				"		            return node.fireEvent(\"on\" + type, event)\r\n" +
+				"		        }\r\n" +
+				"		    }\r\n" +
+				"		\r\n" +
+				"		    var event = createCustomEvent(EVENT_TYPES.DRAG_START)\r\n" +
+				"		    dispatchEvent(sourceNode, EVENT_TYPES.DRAG_START, event)\r\n" +
+				"		\r\n" +
+				"		    var dropEvent = createCustomEvent(EVENT_TYPES.DROP)\r\n" +
+				"		    dropEvent.dataTransfer = event.dataTransfer\r\n" +
+				"		    dispatchEvent(destinationNode, EVENT_TYPES.DROP, dropEvent)\r\n" +
+				"		\r\n" +
+				"		    var dragEndEvent = createCustomEvent(EVENT_TYPES.DRAG_END)\r\n" +
+				"		    dragEndEvent.dataTransfer = event.dataTransfer\r\n" +
+				"		    dispatchEvent(sourceNode, EVENT_TYPES.DRAG_END, dragEndEvent)\r\n" +
+				"		}";
+	}
 	/**
 	 * @param data : data which is being passed from bdd
 	 */
@@ -94,19 +140,27 @@ public class StepsLibrary {
 		Validator.assertTrue(new WebDriverTestBase().getDriver().getTitle().equalsIgnoreCase(input),"Actual Title: \""+ new WebDriverTestBase().getDriver().getTitle() +"\" does not match with Expected: \"" +input+"\"" , "Actual Title: \""+ new WebDriverTestBase().getDriver().getTitle()+"\" matches with Expected: \"" +input+"\"");
 	}
 
-	@QAFTestStep(description="drag {source} and drop on {target} perform")
+	@QAFTestStep(description = "drag {source} and drop on {target} perform")
 	public static void dragAndDropPerform(String source, String target) {
+		((JavascriptExecutor) new WebDriverTestBase().getDriver()).executeScript(getJsDndHelper() + "simulateDragDrop(arguments[0], arguments[1])", $(source),  $(target));
 		QAFExtendedWebElement src = (QAFExtendedWebElement) $(source);
 		Actions actions = new Actions(src.getWrappedDriver());
 		actions.dragAndDrop(src, $(target)).perform();
 	}
-	@QAFTestStep(description="drag {source} and drop on {Xtarget} {Ytarget} perform")
-	public static void dragAndDropPerform(String source, Integer Xtarget,Integer Ytarget) {
-		QAFExtendedWebElement src = (QAFExtendedWebElement) $(source);
-		Actions actions = new Actions(src.getWrappedDriver());
-		actions.dragAndDropBy(src, Xtarget, Ytarget).build().perform();
+
+	@QAFTestStep(description = "drag {0} and drop on {1} and {2} perform")
+	public static void dragAndDropOnAndPerform(String source, String Xtarget, String Ytarget) {
+			QAFExtendedWebElement src = (QAFExtendedWebElement) $(source);
+			Actions actions = new Actions(src.getWrappedDriver());
+			actions.dragAndDropBy(src, Integer.parseInt(Xtarget), Integer.parseInt(Ytarget)).build().perform();
 	}
-	
+
+	@QAFTestStep(description = "drag {0} and drop on value {1} perform")
+	public static void dragAndDropOnValuePerform(String source, String value) {
+		String executScriptValue ="arguments[0].setAttribute('value',"+Integer.parseInt(value)+");if(typeof(arguments[0].onchange) === 'function'){arguments[0].onchange('');}";
+			((JavascriptExecutor) new WebDriverTestBase().getDriver()).executeScript(executScriptValue, $(source));
+	}
+
 	@QAFTestStep(description = "maximizeWindow")
 	public static void maximizeWindow() {
 		new WebDriverTestBase().getDriver().manage().window().maximize();

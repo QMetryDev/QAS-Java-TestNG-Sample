@@ -431,7 +431,7 @@
             }
         }
     },
-    "testData": "resources/mobileweb/TransactionData.csv",
+    "testData": "resources/testdata/TransactionData.csv",
     "testDataExample": [],
     "recordSessionType": "multiple",
     "tags": [],

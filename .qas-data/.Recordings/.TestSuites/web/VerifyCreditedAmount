@@ -459,7 +459,7 @@
             }
         }
     },
-    "testData": "resources/web/TransactionData.csv",
+    "testData": "resources/testdata/TransactionData.csv",
     "testDataExample": [],
     "isTCValid": true,
     "externalTestData": false,

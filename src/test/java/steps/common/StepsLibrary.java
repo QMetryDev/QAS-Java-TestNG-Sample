@@ -23,6 +23,8 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.util.Base64;
+import com.qmetry.qaf.automation.step.CommonStep;
 // define common steps among all the platforms.
 // You can create sub packages to organize the steps within different modules
 public class StepsLibrary {
@@ -197,13 +199,13 @@ public class StepsLibrary {
 		}
 	}
 
-	@QAFTestStep(description = "getAlertText")
-	public static String getAlertText() {
+	@QAFTestStep(description = "getAlertText {0}")
+	public static void getAlertText(String input) {
 		if (checkAlert(0)) {
-		Alert alert= new WebDriverTestBase().getDriver().switchTo().alert();
-		return alert.getText();
+			Alert alert= new WebDriverTestBase().getDriver().switchTo().alert();
+			CommonStep.store(alert.getText(), input);
 		}else{
-			return "";
+			Validator.verifyFalse(true, "Alert is present.", "Alert is not present.");
 		}
 	}
 
@@ -252,5 +254,10 @@ public class StepsLibrary {
 			returnvalue = false;
 		}
 		return returnvalue;
+	}
+
+	public static void sendEncryptedKeys(String text, String loc) {
+		byte[] decoded = Base64.getDecoder().decode(text);
+		CommonStep.sendKeys(new String(decoded), loc);
 	}
 }
